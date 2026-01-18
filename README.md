@@ -61,5 +61,4 @@ ENTER → Select Color
 
 ------------------------------------------------------------------------
 
-# Thanks For using, Donate at
-https://linktr.ee/whosthees
+# Thanks For using, Donate at: https://linktr.ee/whosthees
