@@ -10,4 +10,901 @@
                                                       ▀          
 ]]--
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v311,v312) local v313={};for v371=1, #v311 do v6(v313,v0(v4(v1(v2(v311,v371,v371 + 1 )),v1(v2(v312,1 + (v371% #v312) ,1 + (v371% #v312) + 1 )))%256 ));end return v5(v313);end local v8=game:GetService(v7("\225\207\218\60\227\169\212","\126\177\163\187\69\134\219\167"));local v9=game:GetService(v7("\22\222\47\215\213\45\221\63\209\207\38\223\60\204\255\38","\156\67\173\74\165"));local v10=game:GetService(v7("\0\160\76\19\178\21\67\38\161\64\21\185","\38\84\215\41\118\220\70"));local v11=game:GetService(v7("\124\31\37\26\234\89\24\37","\158\48\118\66\114"));local v12=game:GetService(v7("\156\43\2\61\96\181\250\168\33","\155\203\68\112\86\19\197"));local v13=v7("\72\210\56\249","\152\38\189\86\156\32\24\133");local v14=Color3.fromRGB(255,1151 -(255 + 896) ,0);local v15=0.5;local v16=false;local v17=v7("\239\94\163\67","\38\156\55\199");local v18=2 -1 ;local v19={};local v20=false;local v21;local v22={[v7("\170\122","\35\200\29\28\72\115\20\154")]=Color3.fromRGB(11 -5 ,6,907 -(503 + 396) ),[v7("\9\190\223\218\129","\84\121\223\177\191\237\76")]=Color3.fromRGB(193 -(92 + 89) ,22 -10 ,16),[v7("\171\87\199\165\54\119\60\206\172","\161\219\54\169\192\90\48\80")]=Color3.fromRGB(13 + 11 ,151 + 104 ,783 -583 ),[v7("\74\67\18\33","\69\41\34\96")]=Color3.fromRGB(3 + 17 ,20,59 -33 ),[v7("\175\202\211\15\0\42\174","\75\220\163\183\106\98")]=Color3.fromRGB(7 + 1 ,8,5 + 5 ),[v7("\22\191\147\35","\185\98\218\235\87")]=Color3.fromRGB(700 -470 ,29 + 201 ,230),[v7("\198\41\51\227\218","\202\171\92\71\134\190")]=Color3.fromRGB(259 -89 ,170,1414 -(485 + 759) ),[v7("\40\194\47\141\39\213","\232\73\161\76")]=Color3.fromRGB(0,255,190),[v7("\186\218\65\88\16\175\253\75\80","\126\219\185\34\61")]=Color3.fromRGB(0 -0 ,120,90),[v7("\13\205\93\119\112\99\219\232\24","\135\108\174\62\18\30\23\147")]=Color3.fromRGB(255,60,1339 -(442 + 747) )};local v23=v8.LocalPlayer;local v24=v23:WaitForChild(v7("\134\229\43\210\29\188\20\210\191","\167\214\137\74\171\120\206\83"));local v25=v24:FindFirstChild(v7("\166\241\59\83\221\148\187\197\27","\199\235\144\82\61\152"));if v25 then v25:Destroy();end local v26=Instance.new(v7("\52\21\171\46\2\24\158\62\14","\75\103\118\217"));v26.Name=v7("\234\85\121\26\156\45\247\97\89","\126\167\52\16\116\217");v26.IgnoreGuiInset=true;v26.ResetOnSpawn=false;v26.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;v26.DisplayOrder=10;v26.Parent=v24;local function v34() local v314=1135 -(832 + 303) ;local v315;local v316;local v317;local v318;local v319;local v320;local v321;local v322;local v323;local v324;local v325;while true do if (v314==5) then v320.Parent=v316;v321=Instance.new(v7("\37\53\170\44\98\54\43\20\60","\73\113\80\210\88\46\87"));v321.Size=UDim2.new(0.9,946 -(88 + 858) ,0 + 0 ,34 + 6 );v321.Position=UDim2.fromScale(0.5,0.5 + 0 );v321.AnchorPoint=Vector2.new(789.5 -(766 + 23) , -(4.2 -3));v321.BackgroundTransparency=1 -0 ;v321.TextColor3=v22.muted;v321.Font=Enum.Font.Code;v314=15 -9 ;end if (v314==(3 -2)) then v316.Parent=v24;v317=Instance.new(v7("\242\214\239\81\209","\60\180\164\142"));v317.Size=UDim2.fromScale(1074 -(1036 + 37) ,1);v317.BackgroundColor3=v22.bg;v317.BackgroundTransparency=1;v317.Parent=v316;v318=Instance.new(v7("\126\76\4\36\34","\114\56\62\101\73\71\141"));v318.Size=UDim2.fromOffset(298 + 122 ,272 -132 );v314=2 + 0 ;end if (v314==(1484 -(641 + 839))) then v320.TextColor3=v22.text;v320.Font=Enum.Font.GothamBlack;v320.TextSize=953 -(910 + 3) ;v320.TextXAlignment=Enum.TextXAlignment.Center;v320.TextYAlignment=Enum.TextYAlignment.Center;v320.TextWrapped=true;v320.TextTransparency=2 -1 ;v320.Text=v7("\244\39\173\196\249\224\61\178\195","\170\163\111\226\151");v314=5;end if (v314==0) then v315=v24:FindFirstChild(v7("\237\29\16\169\186\13\238\199\27\9","\156\168\78\64\224\212\121"));if v315 then v315:Destroy();end v316=Instance.new(v7("\52\237\183\203\2\224\130\219\14","\174\103\142\197"));v316.Name=v7("\115\27\111\17\43\74\234\89\29\118","\152\54\72\63\88\69\62");v316.IgnoreGuiInset=true;v316.ResetOnSpawn=false;v316.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;v316.DisplayOrder=1704 -(1466 + 218) ;v314=1 + 0 ;end if (v314==(1155 -(556 + 592))) then v323=v10:Create(v321,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{[v7("\153\216\8\228\76\228\172\211\3\224\121\228\168\211\19\233","\150\205\189\112\144\24")]=808 -(329 + 479) });v324=v10:Create(v320,TweenInfo.new(0.5,Enum.EasingStyle.Quad,Enum.EasingDirection.In),{[v7("\17\129\167\88\48\154\16\30\54\148\190\94\1\134\18\9","\112\69\228\223\44\100\232\113")]=855 -(174 + 680) });v325=v10:Create(v321,TweenInfo.new(0.5 -0 ,Enum.EasingStyle.Quad,Enum.EasingDirection.In),{[v7("\224\26\31\199\130\110\135\218\12\23\210\164\121\136\215\6","\230\180\127\103\179\214\28")]=1 -0 });v322:Play();v323:Play();task.delay(1.4,function() local v520=0 + 0 ;while true do if (v520==(739 -(396 + 343))) then v324:Play();v325:Play();v520=1 + 0 ;end if (v520==(1478 -(29 + 1448))) then v324.Completed:Wait();v316:Destroy();break;end end end);break;end if (v314==(1392 -(135 + 1254))) then v319.Color=ColorSequence.new({ColorSequenceKeypoint.new(0,v22.accentHot),ColorSequenceKeypoint.new(1 + 0 ,v22.accent)});v319.Rotation=1547 -(389 + 1138) ;v319.Parent=v318;v320=Instance.new(v7("\12\11\154\210\134\57\12\135\202","\202\88\110\226\166"));v320.Size=UDim2.new(574.9 -(102 + 472) ,0 + 0 ,0,56 + 44 );v320.Position=UDim2.fromScale(0.5 + 0 ,1545.5 -(320 + 1225) );v320.AnchorPoint=Vector2.new(0.5,0.5 -0 );v320.BackgroundTransparency=1 + 0 ;v314=1468 -(157 + 1307) ;end if (v314==(1865 -(821 + 1038))) then v321.TextSize=14;v321.TextXAlignment=Enum.TextXAlignment.Center;v321.TextYAlignment=Enum.TextYAlignment.Center;v321.TextWrapped=true;v321.TextTransparency=1;v321.Text=v7("\178\15\255\59\215\181\108\255\55\198\165\21","\135\225\76\173\114");v321.Parent=v316;v322=v10:Create(v320,TweenInfo.new(0.5,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{[v7("\46\232\160\164\152\175\166\20\254\168\177\190\184\169\25\244","\199\122\141\216\208\204\221")]=0});v314=17 -10 ;end if (v314==(1 + 1)) then v318.Position=UDim2.fromScale(0.5 -0 ,0.5 + 0 );v318.AnchorPoint=Vector2.new(0.5 -0 ,1026.5 -(834 + 192) );v318.BackgroundColor3=v22.accent;v318.BackgroundTransparency=0.7 + 0 ;v318.BorderSizePixel=0 + 0 ;v318.Parent=v316;Instance.new(v7("\141\192\248\203\170\231\222\214","\164\216\137\187"),v318).CornerRadius=UDim.new(0 + 0 ,43 -15 );v319=Instance.new(v7("\231\207\22\160\167\250\2\215\232\37","\107\178\134\81\210\198\158"));v314=307 -(300 + 4) ;end end end v34();local v35=Instance.new(v7("\170\23\94\75\225","\128\236\101\63\38\132\33"));v35.Size=UDim2.new(0,20,0,1 + 0 );v35.Position=UDim2.new(0.5 -0 ,0,362.5 -(112 + 250) ,0 + 0 );v35.AnchorPoint=Vector2.new(0.5 -0 ,0.5 + 0 );v35.BackgroundColor3=Color3.new(1 -v14.R ,(1 + 0) -v14.G ,1 -v14.B );v35.BackgroundTransparency=0 + 0 ;v35.Parent=v26;v35.Visible=false;local v43=Instance.new(v7("\138\187\16\73\179","\175\204\201\113\36\214\139"));v43.Size=UDim2.new(0 + 0 ,1 + 0 ,0,1434 -(1001 + 413) );v43.Position=UDim2.new(0.5 -0 ,882 -(244 + 638) ,693.5 -(627 + 66) ,0 -0 );v43.AnchorPoint=Vector2.new(0.5,602.5 -(512 + 90) );v43.BackgroundColor3=Color3.new(1 -v14.R ,(1907 -(1665 + 241)) -v14.G ,1 -v14.B );v43.BackgroundTransparency=717 -(373 + 344) ;v43.Parent=v26;v43.Visible=false;local function v51() local v326=0;local v327;while true do if (0==v326) then v327=Color3.new((1 + 0) -v14.R ,(1 + 0) -v14.G ,(2 -1) -v14.B );v35.BackgroundColor3=v327;v326=1 -0 ;end if (v326==2) then v43.Visible=(v13~=v7("\163\119\183\133","\83\205\24\217\224")) and v16 ;break;end if (v326==1) then v43.BackgroundColor3=v327;v35.Visible=(v13~=v7("\73\195\59\217","\100\39\172\85\188")) and v16 ;v326=1101 -(35 + 1064) ;end end end local function v52(v328) local v329=0 + 0 ;local v330;local v331;while true do if (v329==2) then v330.TextColor3=Color3.new(2 -1 ,1,1 + 0 );v330.Font=Enum.Font.SourceSansBold;v330.TextSize=1260 -(298 + 938) ;v329=1262 -(233 + 1026) ;end if (1==v329) then v330.Position=UDim2.new(1666.5 -(636 + 1030) , -(103 + 97),0.5, -25);v330.Text=v328;v330.BackgroundTransparency=1;v329=2 + 0 ;end if (v329==3) then v330.TextTransparency=0 + 0 ;v331=v10:Create(v330,TweenInfo.new(1 + 1 ),{[v7("\138\247\217\214\14\220\179\112\173\226\192\208\63\192\177\103","\30\222\146\161\162\90\174\210")]=1});v331:Play();v329=225 -(55 + 166) ;end if (v329==(1 + 3)) then task.delay(1 + 1 ,function() v330:Destroy();end);break;end if (0==v329) then v330=Instance.new(v7("\210\192\213\41\202\196\207\56\234","\93\134\165\173"));v330.Parent=v26;v330.Size=UDim2.new(0,1527 -1127 ,0,50);v329=298 -(36 + 261) ;end end end local v53={};for v332=0,24 do v53[v332 + 1 ]=Color3.fromHSV(v332/(43 -18) ,1,1369 -(34 + 1334) );end local v54={};local v55=1;local v56=Instance.new(v7("\195\92\113\7\224","\106\133\46\16"));v56.Size=UDim2.fromOffset(239 + 381 ,327 + 93 );v56.Position=UDim2.fromScale(0.5,1283.55 -(1035 + 248) );v56.AnchorPoint=Vector2.new(21.5 -(20 + 1) ,0.5 + 0 );v56.BackgroundColor3=v22.panel;v56.BorderSizePixel=319 -(134 + 185) ;v56.Visible=false;v56.Parent=v26;Instance.new(v7("\109\9\80\243\72\78\93\50","\32\56\64\19\156\58"),v56).CornerRadius=UDim.new(0,1153 -(549 + 584) );local v66=Instance.new(v7("\111\225\214\66\72\253\139\95","\224\58\168\133\54\58\146"));v66.Color=v22.accentDim;v66.Thickness=686 -(314 + 371) ;v66.Parent=v56;local v71=Instance.new(v7("\108\127\108\239\116\130\142\14\87\66","\107\57\54\43\157\21\230\231"));v71.Color=ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(10,10,984 -(478 + 490) )),ColorSequenceKeypoint.new(1,Color3.fromRGB(13 + 11 ,24,1206 -(786 + 386) ))});v71.Rotation=80 -55 ;v71.Parent=v56;local v75=Instance.new(v7("\253\153\16\248\188","\175\187\235\113\149\217\188"));v75.Size=UDim2.new(1,0,1379 -(1055 + 324) ,1396 -(1093 + 247) );v75.BackgroundColor3=v22.bg;v75.BackgroundTransparency=0.05 + 0 ;v75.BorderSizePixel=0 + 0 ;v75.Parent=v56;Instance.new(v7("\9\134\162\67\241\119\125\46","\24\92\207\225\44\131\25"),v75).CornerRadius=UDim.new(0 -0 ,20);local v83=Instance.new(v7("\109\193\185\65\30","\29\43\179\216\44\123"));v83.Size=UDim2.new(1,0 -0 ,0 -0 ,4 -2 );v83.Position=UDim2.fromOffset(0,20 + 34 );v83.BackgroundColor3=v22.accent;v83.BorderSizePixel=0;v83.Parent=v75;local v90=Instance.new(v7("\137\220\56\88\145\216\34\73\177","\44\221\185\64"));v90.Size=UDim2.new(3 -2 , -160,1,0 -0 );v90.Position=UDim2.fromOffset(14 + 4 ,0 -0 );v90.BackgroundTransparency=689 -(364 + 324) ;v90.Text=v7("\54\207\103\108\64\34\213\120\107\51\34\200\102\107\65\46\203","\19\97\135\40\63");v90.TextColor3=v22.text;v90.Font=Enum.Font.GothamBlack;v90.TextSize=54 -34 ;v90.TextXAlignment=Enum.TextXAlignment.Left;v90.Parent=v75;local v103=Instance.new(v7("\154\89\43\47\3\48\172\89\63","\81\206\60\83\91\79"));v103.Size=UDim2.new(2 -1 , -(54 + 106),0 -0 ,18);v103.Position=UDim2.fromOffset(18,50 -18 );v103.BackgroundTransparency=2 -1 ;v103.Text=v7("\107\152\224\50\57\202\94\177\79\167\144\102\58\205\68\170\73","\196\46\203\176\18\79\163\45");v103.TextColor3=v22.muted;v103.Font=Enum.Font.Gotham;v103.TextSize=1280 -(1249 + 19) ;v103.TextXAlignment=Enum.TextXAlignment.Left;v103.Parent=v75;local v115=Instance.new(v7("\140\39\102\10\6\238\251\172\45\112","\143\216\66\30\126\68\155"));v115.Size=UDim2.fromOffset(29 + 3 ,124 -92 );v115.Position=UDim2.new(1087 -(686 + 400) , -(35 + 9),229 -(73 + 156) ,12);v115.AnchorPoint=Vector2.new(0 + 0 ,811 -(721 + 90) );v115.Text="X";v115.Font=Enum.Font.GothamBold;v115.TextSize=14;v115.TextColor3=v22.accentHot;v115.BackgroundColor3=Color3.fromRGB(1 + 19 ,64 -44 ,24);v115.BackgroundTransparency=470.1 -(224 + 246) ;v115.Parent=v75;Instance.new(v7("\159\225\46\196\215\173\210\243","\129\202\168\109\171\165\195\183"),v115).CornerRadius=UDim.new(0 -0 ,18 -8 );v115.MouseButton1Click:Connect(function() v26:Destroy();end);local v129=Instance.new(v7("\4\74\54\213\219","\134\66\56\87\184\190\116"));v129.Size=UDim2.new(1 + 0 , -24,1 + 0 , -(56 + 20));v129.Position=UDim2.fromOffset(23 -11 ,64);v129.BackgroundTransparency=1;v129.BorderSizePixel=0;v129.Parent=v56;local v135=Instance.new(v7("\26\35\8\182\28","\85\92\81\105\219\121\139\65"));v135.Size=UDim2.new(0,190,3 -2 ,0);v135.BackgroundColor3=v22.sidebar;v135.BorderSizePixel=0;v135.Parent=v129;Instance.new(v7("\200\154\115\74\110\209\248\161","\191\157\211\48\37\28"),v135).CornerRadius=UDim.new(513 -(203 + 310) ,16);local v142=Instance.new(v7("\234\54\199\8\40\208\20\241","\90\191\127\148\124"));v142.Color=v22.accentDim;v142.Thickness=1;v142.Parent=v135;local v146=Instance.new(v7("\76\130\54\3\84\134\44\18\116","\119\24\231\78"));v146.Size=UDim2.new(1994 -(1238 + 755) , -(2 + 18),0,36);v146.Position=UDim2.fromOffset(10,1544 -(709 + 825) );v146.BackgroundTransparency=1 -0 ;v146.Text=v7("\181\5\138\121\239\99\35\178\25","\113\226\77\197\42\188\32");v146.TextColor3=v22.text;v146.Font=Enum.Font.Code;v146.TextSize=22 -6 ;v146.TextXAlignment=Enum.TextXAlignment.Left;v146.Parent=v135;local v157=Instance.new(v7("\28\4\245\184\63","\213\90\118\148"));v157.Size=UDim2.new(865 -(196 + 668) , -20,0,3 -2 );v157.Position=UDim2.fromOffset(10,103 -53 );v157.BackgroundColor3=v22.accentDim;v157.BorderSizePixel=0;v157.Parent=v135;local v163=Instance.new(v7("\111\43\172\66\97\90\44\177\90","\45\59\78\212\54"));v163.Size=UDim2.new(834 -(171 + 662) , -(113 -(4 + 89)),0 -0 ,9 + 15 );v163.Position=UDim2.fromOffset(43 -33 ,26 + 38 );v163.BackgroundTransparency=1;v163.TextColor3=v22.accent;v163.Font=Enum.Font.GothamBold;v163.TextSize=14;v163.TextXAlignment=Enum.TextXAlignment.Left;v163.Parent=v135;local v172=Instance.new(v7("\36\83\155\159\170\47\175\245\28","\144\112\54\227\235\230\78\205"));v172.Size=UDim2.new(1487 -(35 + 1451) , -(1473 -(28 + 1425)),0,2015 -(941 + 1052) );v172.Position=UDim2.fromOffset(10,90);v172.BackgroundTransparency=1 + 0 ;v172.TextColor3=v22.muted;v172.Font=Enum.Font.Gotham;v172.TextSize=1527 -(822 + 692) ;v172.TextXAlignment=Enum.TextXAlignment.Left;v172.Parent=v135;local v181=Instance.new(v7("\135\45\23\232\252\90\177\45\3","\59\211\72\111\156\176"));v181.Size=UDim2.new(1, -(28 -8),0 + 0 ,18);v181.Position=UDim2.fromOffset(307 -(45 + 252) ,125 + 1 );v181.BackgroundTransparency=1;v181.TextColor3=v22.text;v181.Font=Enum.Font.GothamBold;v181.TextSize=5 + 7 ;v181.TextXAlignment=Enum.TextXAlignment.Left;v181.Text=v7("\97\183\194\14\103\179\218","\77\46\231\131");v181.Parent=v135;local v191=Instance.new(v7("\156\70\183\77\191","\32\218\52\214"));v191.Size=UDim2.new(1, -(48 -28),433 -(114 + 319) ,229 -69 );v191.Position=UDim2.fromOffset(12 -2 ,150);v191.BackgroundTransparency=1 + 0 ;v191.BorderSizePixel=0 -0 ;v191.Parent=v135;local v197=Instance.new(v7("\123\62\29\161\226\164\105\91\87\24\36\188","\58\46\119\81\200\145\208\37"));v197.Padding=UDim.new(0 -0 ,1967 -(556 + 1407) );v197.FillDirection=Enum.FillDirection.Vertical;v197.HorizontalAlignment=Enum.HorizontalAlignment.Left;v197.SortOrder=Enum.SortOrder.LayoutOrder;v197.Parent=v191;local function v206(v334) local v335=0;local v336;local v337;local v338;local v339;while true do if (v335==1) then v336.BorderSizePixel=0;v336.Parent=v191;Instance.new(v7("\71\104\84\138\236\133\119\83","\235\18\33\23\229\158"),v336).CornerRadius=UDim.new(1206 -(741 + 465) ,6);v337=Instance.new(v7("\100\191\217\175\124\187\195\190\92","\219\48\218\161"));v335=2;end if (2==v335) then v337.Size=UDim2.new(465.7 -(170 + 295) , -(4 + 2),1 + 0 ,0 -0 );v337.Position=UDim2.fromOffset(6,0 + 0 );v337.BackgroundTransparency=1 + 0 ;v337.TextColor3=v22.muted;v335=2 + 1 ;end if (v335==(1230 -(957 + 273))) then v336=Instance.new(v7("\13\158\49\161\172","\86\75\236\80\204\201\221"));v336.Size=UDim2.new(1,0 + 0 ,0 + 0 ,83 -61 );v336.BackgroundColor3=Color3.fromRGB(14,36 -22 ,54 -36 );v336.BackgroundTransparency=0.7 -0 ;v335=1781 -(389 + 1391) ;end if (v335==(3 + 1)) then v337.Parent=v336;v338=Instance.new(v7("\208\116\100\93\247\78\226\225\125","\128\132\17\28\41\187\47"));v338.Size=UDim2.new(0.3, -(1 + 5),2 -1 ,0);v338.Position=UDim2.new(951.7 -(783 + 168) ,0,0 -0 ,0);v335=5;end if ((6 + 0)==v335) then v338.TextXAlignment=Enum.TextXAlignment.Right;v338.Text=v7("\46\20\32","\61\97\82\102\90");v338.Parent=v336;v339=Instance.new(v7("\153\7\152\95\213\88\21\12","\105\204\78\203\43\167\55\126"));v335=318 -(309 + 2) ;end if ((9 -6)==v335) then v337.Font=Enum.Font.Code;v337.TextSize=1223 -(1090 + 122) ;v337.TextXAlignment=Enum.TextXAlignment.Left;v337.Text=v334;v335=2 + 2 ;end if (v335==(16 -11)) then v338.BackgroundTransparency=1 + 0 ;v338.TextColor3=v22.accent;v338.Font=Enum.Font.GothamBold;v338.TextSize=1129 -(628 + 490) ;v335=2 + 4 ;end if ((16 -9)==v335) then v339.Color=v22.accent;v339.Thickness=0 -0 ;v339.Parent=v336;v19[ #v19 + (775 -(431 + 343)) ]={[v7("\183\165\52","\49\197\202\67\126\115\100\167")]=v336,[v7("\36\79\222\61\149\69","\62\87\59\191\73\224\54")]=v338};break;end end end v206(v7("\220\44\207\228\182\63\186\230\210\54\214\224\201\39\186\236\212\50","\169\135\98\154"));v206(v7("\240\89\17\121\175\124\224\228\90\1\105\189\28\248\238\89\100\100\220\29\237\231","\168\171\23\68\52\157\83"));v206(v7("\207\95\192\128\118\16\199\210\88\217\129\101\14\168\216\94\199","\231\148\17\149\205\69\77"));v206(v7("\187\137\242\214\3\194\192\129\238\215\123\191\165\148\247","\159\224\199\167\155\55"));v206(v7("\204\221\9\255\162\206\124\252\193\212\124\253\193\214\14\254\214\202","\178\151\147\92"));v206(v7("\183\211\121\31\68\113\58\175\207\99\1\33\100\91\165\207","\26\236\157\44\82\114\44"));local v207=Instance.new(v7("\30\43\205\79\6\47\215\94\38","\59\74\78\181"));v207.Size=UDim2.new(1 -0 , -20,0,75 -49 );v207.Position=UDim2.fromOffset(8 + 2 ,41 + 273 );v207.BackgroundTransparency=1696 -(556 + 1139) ;v207.TextColor3=v22.muted;v207.Font=Enum.Font.Code;v207.TextSize=26 -(6 + 9) ;v207.TextXAlignment=Enum.TextXAlignment.Left;v207.TextYAlignment=Enum.TextYAlignment.Top;v207.TextWrapped=true;v207.Text="USE ARROW AND ENTER TO\nENABLE / DISABLE FEATURES";v207.Parent=v135;local v220=Instance.new(v7("\3\195\91\87\182","\211\69\177\58\58"));v220.Size=UDim2.new(1, -(38 + 168),1 + 0 ,169 -(28 + 141) );v220.Position=UDim2.fromOffset(206,0);v220.BackgroundColor3=v22.card;v220.BorderSizePixel=0 + 0 ;v220.Parent=v129;Instance.new(v7("\130\204\90\250\251\197\178\247","\171\215\133\25\149\137"),v220).CornerRadius=UDim.new(0 -0 ,16);local v228=Instance.new(v7("\212\225\1\238\253\63\247\71","\34\129\168\82\154\143\80\156"));v228.Color=v22.accentDim;v228.Thickness=1 + 0 ;v228.Parent=v220;local v232=Instance.new(v7("\177\183\43\31\100\79\139\128\190","\233\229\210\83\107\40\46"));v232.Size=UDim2.new(1318 -(486 + 831) , -20,0,72 -44 );v232.Position=UDim2.fromOffset(12,8);v232.BackgroundTransparency=3 -2 ;v232.Text=v7("\241\99\30\243\49\245\103","\101\161\34\82\182");v232.TextColor3=v22.text;v232.Font=Enum.Font.GothamBold;v232.TextSize=3 + 11 ;v232.TextXAlignment=Enum.TextXAlignment.Left;v232.Parent=v220;local v242=Instance.new(v7("\206\31\88\243\222","\78\136\109\57\158\187\130\226"));v242.Size=UDim2.new(3 -2 , -(1287 -(668 + 595)),0 + 0 ,1 + 0 );v242.Position=UDim2.fromOffset(12,92 -58 );v242.BackgroundColor3=v22.accentDim;v242.BorderSizePixel=290 -(23 + 267) ;v242.Parent=v220;local v248=Instance.new(v7("\24\45\248\252\59","\145\94\95\153"));v248.Size=UDim2.new(1945 -(1129 + 815) , -(411 -(371 + 16)),1, -92);v248.Position=UDim2.fromOffset(1762 -(1326 + 424) ,90 -42 );v248.BackgroundTransparency=3 -2 ;v248.BorderSizePixel=118 -(88 + 30) ;v248.Parent=v220;local v254=Instance.new(v7("\200\228\56\220\93\163\209\204\13\218\91\163","\215\157\173\116\181\46"));v254.Padding=UDim.new(0,10);v254.HorizontalAlignment=Enum.HorizontalAlignment.Center;v254.Parent=v248;local v259=772 -(720 + 51) ;local function v260(v340) local v341=0 -0 ;while true do if (v341==(1776 -(421 + 1355))) then if (v54[v55] and v54[v55]:FindFirstChild(v7("\0\157\184\230\200\58\191\142","\186\85\212\235\146"))) then v54[v55].UIStroke.Thickness=0 -0 ;end v55=v340;v341=1 + 0 ;end if (v341==(1084 -(286 + 797))) then if (v54[v55] and v54[v55]:FindFirstChild(v7("\247\168\37\234\43\225\83\199","\56\162\225\118\158\89\142"))) then v54[v55].UIStroke.Thickness=2;end break;end end end local function v261(v342) local v343=0;local v344;local v345;local v346;while true do if (v343==(7 -5)) then local v496=0 -0 ;while true do if (v496==(439 -(397 + 42))) then v345.TextColor3=Color3.new((1 + 0) -v53[v344].R ,(801 -(24 + 776)) -v53[v344].G ,(1 -0) -v53[v344].B );v345.Font=Enum.Font.Gotham;v496=1;end if (v496==(786 -(222 + 563))) then v345.TextSize=30 -16 ;v343=3;break;end end end if (v343==5) then local v497=0 + 0 ;while true do if (v497==(190 -(23 + 167))) then v345.MouseButton1Click:Connect(function() local v550=1798 -(690 + 1108) ;while true do if (v550==(1 + 1)) then v51();break;end if (v550==0) then v14=v53[v344];v52(v7("\193\45\235\83\105\49\197\234\35\233\91\126\117\134\246\45\167","\166\130\66\135\60\27\17")   .. v344 );v550=1 + 0 ;end if (v550==1) then v56.Visible=false;updateHighlights();v550=850 -(40 + 808) ;end end end);v54[v344]=v345;v497=1;end if (v497==(1 + 0)) then v259=v344 + (3 -2) ;v343=6;break;end end end if (v343==4) then local v498=0 + 0 ;while true do if (v498==0) then v346.Parent=v345;v346.Color=Color3.new(1,1,1);v498=1 + 0 ;end if ((1 + 0)==v498) then v346.Thickness=571 -(47 + 524) ;v343=5;break;end end end if (v343==6) then return v345;end if (v343==(1 + 0)) then v345.BackgroundColor3=v53[v344];v345.BorderColor3=Color3.fromRGB(664 -421 ,363 -120 ,553 -310 );v345.Text=tostring(v344);v343=2;end if (v343==(1726 -(1165 + 561))) then local v503=0;while true do if (v503==(0 + 0)) then v344=v259;v345=Instance.new(v7("\104\0\216\187\0\205\72\17\207\161","\184\60\101\160\207\66"));v503=3 -2 ;end if (v503==1) then v345.Size=UDim2.fromOffset(52,16 + 24 );v343=480 -(341 + 138) ;break;end end end if (v343==(1 + 2)) then v345.Parent=v342;Instance.new(v7("\4\171\95\179\35\140\121\174","\220\81\226\28"),v345).CornerRadius=UDim.new(0 -0 ,334 -(89 + 237) );v346=Instance.new(v7("\38\252\177\239\248\200\24\208","\167\115\181\226\155\138"));v343=12 -8 ;end end end local function v262() local v347=0 -0 ;local v348;local v349;while true do if (v347==(882 -(581 + 300))) then v349=Instance.new(v7("\123\57\27\115\93\4\27\123\87\31\34\110","\26\46\112\87"));v349.FillDirection=Enum.FillDirection.Horizontal;v349.Padding=UDim.new(1220 -(855 + 365) ,18 -10 );v349.HorizontalAlignment=Enum.HorizontalAlignment.Center;v347=1 + 1 ;end if ((1235 -(1030 + 205))==v347) then v348=Instance.new(v7("\98\88\207\120\53","\80\36\42\174\21"));v348.Size=UDim2.new(1 + 0 ,0,0 + 0 ,40);v348.BackgroundTransparency=287 -(156 + 130) ;v348.Parent=v248;v347=1;end if (v347==2) then v349.VerticalAlignment=Enum.VerticalAlignment.Center;v349.Parent=v348;for v521=1,11 -6  do v261(v348);end break;end end end v262();for v350=1 -0 ,7 -3  do v262();end local v263=Instance.new(v7("\141\38\179\96\147\190\71\177\181","\212\217\67\203\20\223\223\37"));v263.Size=UDim2.new(1 + 0 , -(12 + 8),69 -(10 + 59) ,6 + 14 );v263.Position=UDim2.new(0 -0 ,10,1, -(1193 -(671 + 492)));v263.BackgroundTransparency=1;v263.Text=v7("\143\158\173\146\155\159\186\221\173\205\227\146\159\131\188\215\168","\178\218\237\200");v263.TextColor3=v22.muted;v263.Font=Enum.Font.Code;v263.TextSize=14;v263.TextXAlignment=Enum.TextXAlignment.Center;v263.Parent=v220;local function v274(v351) if (v19[v18] and v19[v18].row:FindFirstChild(v7("\131\156\213\196\164\186\237\213","\176\214\213\134"))) then v19[v18].row.UIStroke.Thickness=0 + 0 ;end v18=v351;if (v19[v18] and v19[v18].row:FindFirstChild(v7("\193\132\133\192\186\89\82\241","\57\148\205\214\180\200\54"))) then v19[v18].row.UIStroke.Thickness=1217 -(369 + 846) ;end end local function v275() if (v17==v7("\1\244\49\49","\22\114\157\85\84")) then local v380=0 + 0 ;while true do if (v380==(0 + 0)) then v142.Thickness=1947 -(1036 + 909) ;v228.Thickness=1;break;end end else local v381=0 + 0 ;local v382;while true do if (v381==(0 -0)) then v382=0;while true do if ((203 -(11 + 192))==v382) then v142.Thickness=1;v228.Thickness=2 + 0 ;break;end end break;end end end end local function v276() local v352=175 -(135 + 40) ;while true do if (v352==(2 -1)) then if v19[2 + 1 ] then v19[3].status.Text=((v13==v7("\20\41\52\112","\20\114\64\88\28\220")) and v7("\30\47","\221\81\97\178\212\152\176")) or v7("\226\193\59","\122\173\135\125\155") ;end if v19[8 -4 ] then v19[5 -1 ].status.Text=((v13==v7("\147\192\12\181","\168\228\161\96\217\95\81")) and v7("\244\255","\55\187\177\78\60\79")) or v7("\2\232\121","\224\77\174\63\139\38\175") ;end v352=178 -(50 + 126) ;end if ((5 -3)==v352) then if v19[2 + 3 ] then v19[1418 -(1233 + 180) ].status.Text=( not v20 and v7("\171\111","\78\228\33\56")) or v7("\225\88\148","\229\174\30\210\99") ;end if v19[975 -(522 + 447) ] then v19[1427 -(107 + 1314) ].status.Text=(v16 and v7("\52\195","\89\123\141\230\49\141\93")) or v7("\220\87\208","\42\147\17\150\108\112") ;end break;end if (v352==0) then if v19[1 + 0 ] then v19[1].status.Text=((v13==v7("\203\222\7\200\84\248\173","\200\164\171\115\164\61\150")) and v7("\145\218","\227\222\148\99\37")) or v7("\28\116\116","\153\83\50\50\150") ;end if v19[5 -3 ] then v19[2].status.Text=(v56.Visible and v7("\114\88","\45\61\22\19\124\19\203")) or v7("\238\52\43","\217\161\114\109\149\98\16") ;end v352=1 + 0 ;end end end local function v277() local v353=0 -0 ;while true do if (v353==(0 -0)) then v163.Text=v7("\34\137\9\90\189\168","\136\111\198\77\31\135")   .. string.upper(v13) ;v172.Text=v7("\36\32\139\122\231\164","\201\98\105\199\54\221\132\119")   .. tostring(math.floor(((1911 -(716 + 1194)) -v15) * (2 + 98) ))   .. v7("\252\76\184\106\77\120\145","\204\217\108\227\65\98\85") ;v353=1 + 0 ;end if (v353==(504 -(74 + 429))) then v276();break;end end end v277();v274(1);v275();local v278={};local v279=385 -185 ;local v280=0;local function v281(v354) if (v13==v7("\88\202\249\233","\160\62\163\149\133\76")) then local v383=0 + 0 ;local v384;while true do if (v383==(0 -0)) then v384=0 + 0 ;while true do if (v384==(0 -0)) then v354.OutlineTransparency=1;v354.FillTransparency=v15;v384=2 -1 ;end if (v384==(434 -(279 + 154))) then v354.FillColor=v14;v354.DepthMode=Enum.HighlightDepthMode.Occluded;break;end end break;end end elseif (v13==v7("\193\161\1\35","\163\182\192\109\79")) then local v522=778 -(454 + 324) ;while true do if (v522==(0 + 0)) then v354.OutlineTransparency=18 -(12 + 5) ;v354.FillTransparency=v15;v522=1;end if (v522==(1 + 0)) then v354.FillColor=v14;v354.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;break;end end elseif (v13==v7("\59\51\20\204\252\58\35","\149\84\70\96\160")) then local v548=0 -0 ;while true do if (v548==(1 + 0)) then v354.OutlineColor=v14;break;end if (v548==(1093 -(277 + 816))) then v354.OutlineTransparency=0.8 -0 ;v354.FillTransparency=1184 -(1058 + 125) ;v548=1 + 0 ;end end end end local function v282(v355) return (v355.Name==v7("\21\7\1\232","\141\88\102\109")) and v355:FindFirstChild(v7("\155\70\199\113\20\50\92\197","\161\211\51\170\16\122\93\53")) ;end local function v283(v356) if ((v280<v279) and  not v278[v356] and v282(v356)) then local v385=0;while true do if (v385==(976 -(815 + 160))) then if (v13~=v7("\245\161\188\45","\72\155\206\210")) then local v556=0;local v557;while true do if (v556==(8 -6)) then v281(v557);break;end if (v556==1) then v557.Adornee=v356;v557.Enabled=true;v556=4 -2 ;end if (v556==(0 + 0)) then local v578=0 -0 ;while true do if (0==v578) then v557=Instance.new(v7("\110\115\83\6\63\79\125\92\26","\83\38\26\52\110"));v557.Parent=v356;v578=1899 -(41 + 1857) ;end if (v578==(1894 -(1222 + 671))) then v556=1;break;end end end end end break;end if ((0 -0)==v385) then v278[v356]=true;v280=v280 + 1 ;v385=1 -0 ;end end end end local function v284(v357) if v278[v357] then local v386=0;local v387;while true do if (v386==(1183 -(229 + 953))) then v387=v357:FindFirstChild(v7("\112\30\32\78\84\30\32\78\76","\38\56\119\71"));if v387 then v387:Destroy();end break;end if (v386==0) then v278[v357]=nil;v280=v280-(1775 -(1111 + 663)) ;v386=1580 -(874 + 705) ;end end end end local function v285() for v372 in pairs(v278) do local v373=0 + 0 ;local v374;while true do if (0==v373) then v374=v372:FindFirstChild(v7("\219\230\95\222\41\95\244\231\76","\54\147\143\56\182\69"));if (v13~=v7("\216\142\241\76","\191\182\225\159\41")) then if  not v374 then local v568=0 + 0 ;local v569;while true do if (v568==0) then local v579=0 -0 ;while true do if (v579==(0 + 0)) then v569=Instance.new(v7("\3\27\47\93\135\142\197\35\6","\162\75\114\72\53\235\231"));v569.Parent=v372;v579=680 -(642 + 37) ;end if (1==v579) then v568=1 + 0 ;break;end end end if ((1 + 0)==v568) then v569.Adornee=v372;v569.Enabled=true;v568=2;end if (v568==(4 -2)) then v281(v569);break;end end else v281(v374);end elseif v374 then v374:Destroy();end break;end end end end task.spawn(function() for v375,v376 in v12:GetDescendants() do v283(v376);end end);v12.DescendantAdded:Connect(function(v358) v283(v358);end);v12.DescendantRemoving:Connect(function(v359) v284(v359);end);v9.InputBegan:Connect(function(v360,v361) if ((v360.KeyCode==Enum.KeyCode.KeypadOne) and  not v361) then local v388=454 -(233 + 221) ;while true do if (v388==(0 -0)) then if (v13==v7("\131\41\80\238\90\12\137","\98\236\92\36\130\51")) then local v558=0;local v559;while true do if (v558==(0 + 0)) then v559=0;while true do if (v559==(1541 -(718 + 823))) then v13=v7("\170\22\2\191","\80\196\121\108\218\37\200\213");v52(v7("\47\102\22\115\66\0\143\64\91\11\120\67\2\131\7\123\22\63\111\7\153\1\113\14\122\79","\234\96\19\98\31\43\110"));break;end end break;end end else v13=v7("\9\10\70\203\165\124\142","\235\102\127\50\167\204\18");v52(v7("\127\180\225\47\77\32\85\225\221\42\67\38\92\168\242\43\80\110\117\175\244\33\72\43\84","\78\48\193\149\67\36"));end v285();v388=1 + 0 ;end if (v388==1) then v51();v277();break;end end elseif (((v360.KeyCode==Enum.KeyCode.KeypadTwo) or (v360.KeyCode==Enum.KeyCode.Home)) and  not v361) then local v523=0;while true do if (v523==0) then v56.Visible= not v56.Visible;v17=v7("\35\23\132\29","\33\80\126\224\120");v523=806 -(266 + 539) ;end if (v523==1) then v260(1);v274(2 -1 );v523=1227 -(636 + 589) ;end if (v523==2) then v275();v276();break;end end elseif ((v360.KeyCode==Enum.KeyCode.KeypadThree) and  not v361) then local v549=0;while true do if (v549==0) then if (v13==v7("\234\161\15\200","\60\140\200\99\164")) then local v582=0 -0 ;while true do if (v582==(0 -0)) then v13=v7("\137\251\10\35","\194\231\148\100\70");v52(v7("\96\69\205\175\182\224\79\75\201\175\255\207\78\88\129\135\255\219\71\78\205\166\242","\168\38\44\161\195\150"));break;end end else local v583=0 + 0 ;local v584;while true do if (v583==0) then v584=0;while true do if (0==v584) then v13=v7("\134\245\142\122","\118\224\156\226\22\80\136\214");v52(v7("\100\231\85\140\2\198\80\135\74\226\80\135\74\250\25\165\76\239\91\140\71\234","\224\34\142\57"));break;end end break;end end end v285();v549=1;end if (v549==1) then v51();v277();break;end end elseif ((v360.KeyCode==Enum.KeyCode.KeypadFour) and  not v361) then local v570=0;while true do if (v570==1) then v51();v277();break;end if (0==v570) then if (v13==v7("\201\166\201\209","\110\190\199\165\189\19\145\61")) then local v587=0 + 0 ;while true do if (v587==0) then v13=v7("\212\228\121\237","\167\186\139\23\136\235");v52(v7("\45\180\132\1\90\157\129\10\18\185\129\10\18\161\200\41\19\166\137\15\22\176\140","\109\122\213\232"));break;end end else v13=v7("\249\246\174\60","\80\142\151\194");v52(v7("\52\199\123\64\67\238\126\75\11\202\126\75\11\210\55\105\13\199\117\64\6\194","\44\99\166\23"));end v285();v570=1016 -(657 + 358) ;end end elseif ((v360.KeyCode==Enum.KeyCode.Equals) and  not v361) then v15=math.max(v15-(0.1 -0) ,0 -0 );v52(v7("\90\254\37\58\115\144\110\246\39\37\35\165\110\242\39\53\42\254\60","\196\28\151\73\86\83")   .. tostring(math.floor(((1188 -(1151 + 36)) -v15) * 100 ))   .. "%" );v285();v277();elseif ((v360.KeyCode==Enum.KeyCode.Minus) and  not v361) then local v585=0 + 0 ;while true do if (v585==(0 + 0)) then v15=math.min(v15 + (0.1 -0) ,1833 -(1552 + 280) );v52(v7("\213\10\37\28\194\108\10\119\253\16\57\17\144\93\22\117\234\89\105","\22\147\99\73\112\226\56\120")   .. tostring(math.floor(((835 -(64 + 770)) -v15) * (68 + 32) ))   .. "%" );v585=2 -1 ;end if (v585==(1 + 0)) then v285();v277();break;end end elseif ((v360.KeyCode==Enum.KeyCode.KeypadSix) and  not v361) then if (v13==v7("\182\122\236\240","\237\216\21\130\149")) then v52(v7("\167\64\94\93\188\204\30\167\125\111\31\182\192\76\145\90","\62\226\46\63\63\208\169"));else local v589=0;while true do if (v589==0) then v16= not v16;v52(v7("\198\11\90\144\12\5\46\87\247\67\21","\62\133\121\53\227\127\109\79")   .. ((v16 and v7("\63\58","\194\112\116\82\149\182\206")) or v7("\22\142\106","\110\89\200\44\120\160\130")) );v589=1244 -(157 + 1086) ;end if (v589==(1 -0)) then v51();v276();break;end end end elseif (v56.Visible and  not v361) then if ((v360.KeyCode==Enum.KeyCode.Right) and (v17==v7("\184\202\79\67","\45\203\163\43\38\35\42\91"))) then local v590=0 -0 ;local v591;while true do if ((0 -0)==v590) then v591=0 -0 ;while true do if (v591==(819 -(599 + 220))) then v17=v7("\194\132\208\38\147\189\81","\52\178\229\188\67\231\201");v275();v591=1;end if (v591==(1 -0)) then return;end end break;end end elseif ((v360.KeyCode==Enum.KeyCode.Left) and (v17==v7("\49\64\92\1\227\72\38","\67\65\33\48\100\151\60"))) then v17=v7("\204\238\170\221","\147\191\135\206\184");v275();return;end if (v17==v7("\151\33\162\196","\210\228\72\198\161\184\51")) then local v592=v18;if (v360.KeyCode==Enum.KeyCode.Up) then v592=math.max(1932 -(1813 + 118) ,v18-(1 + 0) );elseif (v360.KeyCode==Enum.KeyCode.Down) then v592=math.min( #v19,v18 + (1218 -(841 + 376)) );elseif (v360.KeyCode==Enum.KeyCode.Return) then if (v18==(1 -0)) then local v597=0;while true do if ((1 + 0)==v597) then v51();v277();break;end if (v597==(0 -0)) then if (v13==v7("\57\92\231\28\122\192\51","\174\86\41\147\112\19")) then local v600=859 -(464 + 395) ;while true do if (v600==(0 -0)) then v13=v7("\85\15\131\14","\203\59\96\237\107\69\111\113");v52(v7("\11\3\184\237\56\254\210\100\62\165\230\57\252\222\35\30\184\161\21\249\196\37\20\160\228\53","\183\68\118\204\129\81\144"));break;end end else v13=v7("\1\184\100\232\2\140\11","\226\110\205\16\132\107");v52(v7("\196\214\244\213\72\229\198\160\241\72\236\203\236\208\70\227\215\160\252\79\234\193\236\220\69","\33\139\163\128\185"));end v285();v597=1 + 0 ;end end elseif (v18==(839 -(467 + 370))) then local v598=0;while true do if (v598==(0 -0)) then v56.Visible= not v56.Visible;v276();break;end end elseif (v18==3) then local v599=0 + 0 ;while true do if (v599==(0 -0)) then if (v13==v7("\81\81\8\210","\190\55\56\100")) then local v606=0 + 0 ;while true do if ((0 -0)==v606) then v13=v7("\88\160\50\27","\147\54\207\92\126\115\131");v52(v7("\43\56\57\113\77\86\4\54\61\113\4\121\5\37\117\89\4\109\12\51\57\120\9","\30\109\81\85\29\109"));break;end end else local v607=0;local v608;while true do if (v607==(520 -(150 + 370))) then v608=0;while true do if (v608==(1282 -(74 + 1208))) then v13=v7("\249\120\88\186","\156\159\17\52\214\86\190");v52(v7("\136\230\177\176\238\199\180\187\166\227\180\187\166\251\253\153\160\238\191\176\171\235","\220\206\143\221"));break;end end break;end end end v285();v599=1;end if (v599==1) then v51();v277();break;end end elseif (v18==(9 -5)) then local v602=0 -0 ;while true do if (v602==1) then v51();v277();break;end if (v602==(0 + 0)) then if (v13==v7("\145\124\33\27","\178\230\29\77\119\184\172")) then local v609=390 -(14 + 376) ;local v610;while true do if (v609==(0 -0)) then v610=0 + 0 ;while true do if (v610==0) then v13=v7("\251\177\4\30","\152\149\222\106\123\23");v52(v7("\234\39\250\79\245\245\47\241\75\185\212\33\254\87\245\249\47\229\66\183\209\35\242","\213\189\70\150\35"));break;end end break;end end else local v611=0 + 0 ;while true do if ((0 + 0)==v611) then v13=v7("\88\84\120\4","\104\47\53\20");v52(v7("\148\77\141\16\252\39\170\75\137\16\181\8\171\88\193\57\178\14\161\64\132\24","\111\195\44\225\124\220"));break;end end end v285();v602=2 -1 ;end end elseif (v18==5) then local v603=0 + 0 ;local v604;while true do if (v603==(78 -(23 + 55))) then v604=0 -0 ;while true do if ((0 + 0)==v604) then if v21 then v21();end v276();break;end end break;end end elseif (v18==(6 + 0)) then if (v13==v7("\214\73\14\118","\203\184\38\96\19\203")) then v52(v7("\28\125\120\67\194\60\51\92\114\254\121\117\112\83\221\45","\174\89\19\25\33"));else local v614=0 -0 ;while true do if (v614==(0 + 0)) then v16= not v16;v52(v7("\12\0\93\93\228\143\10\38\0\8\14","\107\79\114\50\46\151\231")   .. ((v16 and v7("\22\136","\160\89\198\213\73\234\89\215")) or v7("\103\87\146","\165\40\17\212\158")) );v614=902 -(652 + 249) ;end if (v614==1) then v51();v276();break;end end end end end v274(v592);else local v593=0;local v594;local v595;local v596;while true do if ((2 -1)==v593) then v596=nil;while true do if (v594==1) then if (v360.KeyCode==Enum.KeyCode.Up) then if (v55>5) then v596=v55-5 ;end elseif (v360.KeyCode==Enum.KeyCode.Down) then if (v55<=(1888 -(708 + 1160))) then v596=v55 + (13 -8) ;end elseif (v360.KeyCode==Enum.KeyCode.Left) then if (v595>(1 -0)) then v596=v55-(28 -(10 + 17)) ;end elseif (v360.KeyCode==Enum.KeyCode.Right) then if (v595<(2 + 3)) then v596=v55 + (1733 -(1400 + 332)) ;end elseif (v360.KeyCode==Enum.KeyCode.Return) then local v605=0 -0 ;while true do if (v605==2) then v51();v277();break;end if (v605==(1908 -(242 + 1666))) then v14=v53[v55];v52(v7("\198\214\4\60\52\165\218\0\50\40\226\220\12\115\50\234\153","\70\133\185\104\83")   .. v55 );v605=1 + 0 ;end if (v605==(1 + 0)) then v56.Visible=false;v285();v605=2 + 0 ;end end end v260(v596);break;end if (v594==0) then v595=((v55-(941 -(850 + 90)))%5) + (1 -0) ;v596=v55;v594=1391 -(360 + 1030) ;end end break;end if (v593==0) then v594=0 + 0 ;v595=nil;v593=2 -1 ;end end end end end);local v286=v24:FindFirstChild(v7("\42\115\99\14\192\23\68\70\38\204\49\108","\169\100\37\36\74"));if v286 then v286:Destroy();end local v287=Instance.new(v7("\51\132\176\85\5\137\133\69\9","\48\96\231\194"));v287.Name=v7("\230\108\41\9\16\203\174\129\196\95\59\4","\227\168\58\110\77\121\184\207");v287.IgnoreGuiInset=true;v287.ResetOnSpawn=false;v287.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;v287.DisplayOrder=41 -11 ;v287.Parent=v24;local v294=Instance.new(v7("\79\57\167\84\157\218\115\160\119","\197\27\92\223\32\209\187\17"));v294.Size=UDim2.new(1661 -(909 + 752) ,1423 -(109 + 1114) ,0,91 -41 );v294.Position=UDim2.new(0.5 + 0 ,0,0.5,242 -(6 + 236) );v294.AnchorPoint=Vector2.new(0.5 + 0 ,0.5);v294.BackgroundTransparency=1 + 0 ;v294.TextColor3=v22.text;v294.TextScaled=true;v294.Font=Enum.Font.SourceSansBold;v294.TextTransparency=2 -1 ;v294.Parent=v287;local v305=TweenInfo.new(0.5 -0 ,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);local v306=v10:Create(v294,v305,{[v7("\55\90\219\239\55\77\194\245\16\79\194\233\6\81\192\226","\155\99\63\163")]=1133 -(1076 + 57) });local v307=v10:Create(v294,v305,{[v7("\182\212\185\153\141\150\131\223\178\157\184\150\135\223\162\148","\228\226\177\193\237\217")]=1 + 0 });local function v308(v362) local v363=689 -(579 + 110) ;while true do if (v363==0) then v294.Text=v362;v306:Play();v363=1;end if (v363==1) then task.spawn(function() local v524=0 + 0 ;while true do if (v524==(0 + 0)) then task.wait(2 + 0 );v307:Play();break;end end end);break;end end end local v309=v23.PlayerGui:FindFirstChild(v7("\26\134\4\207\58\164\38\244\50\177\32\227","\134\84\208\67"));local function v310() local v364=407 -(174 + 233) ;local v365;local v366;while true do local v377=0 -0 ;while true do if (v377==(0 -0)) then if (v364==(0 + 0)) then v365=v11:FindFirstChild(v7("\48\163\138\83\1\143\137\78\1\169\133\72\26\163\136","\60\115\204\230"));if (v365 and v365:IsA(v7("\196\53\231\127\245\25\228\98\245\63\232\100\238\53\229\85\225\60\238\115\243","\16\135\90\139"))) then return v365;end v364=1175 -(663 + 511) ;end if (v364==(1 + 0)) then v366=v11:FindFirstChildWhichIsA(v7("\119\123\10\60\92\119\119\70\102\3\48\90\93\119\90\81\0\53\75\87\108","\24\52\20\102\83\46\52"));return v366;end break;end end end end function v21() local v367=0;local v368;while true do if (v367==1) then v368=v310();if v368 then v368.Enabled= not v20;else v308(v7("\231\32\45\43\29\231\32\51\54\10\199\59\40\43\1\132\33\46\48\79\194\32\52\42\11","\111\164\79\65\68"));end v367=1 + 1 ;end if (v367==(5 -3)) then v308(v7("\232\239\164\158\47\228\194\153\160\209\34\229\212\250\140\204\60\239\197\205\138\209\32\176\134","\138\166\185\227\190\78")   .. ((v20 and v7("\228\82\227","\121\171\20\165\87\50\67")) or v7("\233\22","\98\166\88\217\86\217")) );break;end if (v367==(0 + 0)) then v20= not v20;if v309 then v309.Enabled= not v20;end v367=2 -1 ;end end end v9.InputBegan:Connect(function(v369,v370) if ( not v370 and (v369.KeyCode==Enum.KeyCode.KeypadFive)) then v21();v276();end end);
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local Lighting = game:GetService("Lighting")
+local Workspace = game:GetService("Workspace")
+local mode = "none"  -- "none", "outline", "fill", "wall"
+local currentColor = Color3.fromRGB(255, 0, 0)
+local fillTransparency = 0.5  -- New variable for fill transparency
+local crosshairEnabled = false
+local panelFocus = "side" -- "side" or "palette"
+local featureIndex = 1
+local featureItems = {}
+local disabled = false
+local toggleNvg
+
+local theme = {
+	bg = Color3.fromRGB(6, 6, 8),
+	panel = Color3.fromRGB(12, 12, 16),
+	panelGlow = Color3.fromRGB(24, 255, 200),
+	card = Color3.fromRGB(20, 20, 26),
+	sidebar = Color3.fromRGB(8, 8, 10),
+	text = Color3.fromRGB(230, 230, 230),
+	muted = Color3.fromRGB(170, 170, 170),
+	accent = Color3.fromRGB(0, 255, 190),
+	accentDim = Color3.fromRGB(0, 120, 90),
+	accentHot = Color3.fromRGB(255, 60, 150)
+}
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local existingMain = playerGui:FindFirstChild("MainESPUI")
+if existingMain then
+	existingMain:Destroy()
+end
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "MainESPUI"
+screenGui.IgnoreGuiInset = true -- 🔥 FIX CENTER
+screenGui.ResetOnSpawn = false
+screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+screenGui.DisplayOrder = 10
+screenGui.Parent = playerGui
+
+local function playIntro()
+	local existingIntro = playerGui:FindFirstChild("ESPIntroUI")
+	if existingIntro then
+		existingIntro:Destroy()
+	end
+
+	local introGui = Instance.new("ScreenGui")
+	introGui.Name = "ESPIntroUI"
+	introGui.IgnoreGuiInset = true
+	introGui.ResetOnSpawn = false
+	introGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	introGui.DisplayOrder = 20
+	introGui.Parent = playerGui
+
+	local backdrop = Instance.new("Frame")
+	backdrop.Size = UDim2.fromScale(1, 1)
+	backdrop.BackgroundColor3 = theme.bg
+	backdrop.BackgroundTransparency = 1
+	backdrop.Parent = introGui
+
+	local glow = Instance.new("Frame")
+	glow.Size = UDim2.fromOffset(420, 140)
+	glow.Position = UDim2.fromScale(0.5, 0.5)
+	glow.AnchorPoint = Vector2.new(0.5, 0.5)
+	glow.BackgroundColor3 = theme.accent
+	glow.BackgroundTransparency = 0.7
+	glow.BorderSizePixel = 0
+	glow.Parent = introGui
+	Instance.new("UICorner", glow).CornerRadius = UDim.new(0, 28)
+
+	local glowGradient = Instance.new("UIGradient")
+	glowGradient.Color = ColorSequence.new({
+		ColorSequenceKeypoint.new(0, theme.accentHot),
+		ColorSequenceKeypoint.new(1, theme.accent)
+	})
+	glowGradient.Rotation = 20
+	glowGradient.Parent = glow
+
+	local introText = Instance.new("TextLabel")
+	introText.Size = UDim2.new(0.9, 0, 0, 100)
+	introText.Position = UDim2.fromScale(0.5, 0.5)
+	introText.AnchorPoint = Vector2.new(0.5, 0.5)
+	introText.BackgroundTransparency = 1
+	introText.TextColor3 = theme.text
+	introText.Font = Enum.Font.GothamBlack
+	introText.TextSize = 40
+	introText.TextXAlignment = Enum.TextXAlignment.Center
+	introText.TextYAlignment = Enum.TextYAlignment.Center
+	introText.TextWrapped = true
+	introText.TextTransparency = 1
+	introText.Text = "WHOSSCRPT"
+	introText.Parent = introGui
+
+	local subText = Instance.new("TextLabel")
+	subText.Size = UDim2.new(0.9, 0, 0, 40)
+	subText.Position = UDim2.fromScale(0.5, 0.5)
+	subText.AnchorPoint = Vector2.new(0.5, -1.2)
+	subText.BackgroundTransparency = 1
+	subText.TextColor3 = theme.muted
+	subText.Font = Enum.Font.Code
+	subText.TextSize = 14
+	subText.TextXAlignment = Enum.TextXAlignment.Center
+	subText.TextYAlignment = Enum.TextYAlignment.Center
+	subText.TextWrapped = true
+	subText.TextTransparency = 1
+	subText.Text = "SCRIPT READY"
+	subText.Parent = introGui
+
+	local fadeIn = TweenService:Create(introText, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0})
+	local subFadeIn = TweenService:Create(subText, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0})
+	local fadeOut = TweenService:Create(introText, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextTransparency = 1})
+	local subFadeOut = TweenService:Create(subText, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextTransparency = 1})
+
+	fadeIn:Play()
+	subFadeIn:Play()
+	task.delay(1.4, function()
+		fadeOut:Play()
+		subFadeOut:Play()
+		fadeOut.Completed:Wait()
+		introGui:Destroy()
+	end)
+end
+
+playIntro()
+
+
+-- Crosshair
+local crosshairH = Instance.new("Frame")
+crosshairH.Size = UDim2.new(0, 20, 0, 1)
+crosshairH.Position = UDim2.new(0.5, 0, 0.5, 0)
+crosshairH.AnchorPoint = Vector2.new(0.5, 0.5)
+crosshairH.BackgroundColor3 = Color3.new(1 - currentColor.R, 1 - currentColor.G, 1 - currentColor.B)
+crosshairH.BackgroundTransparency = 0
+crosshairH.Parent = screenGui
+crosshairH.Visible = false
+
+local crosshairV = Instance.new("Frame")
+crosshairV.Size = UDim2.new(0, 1, 0, 20)
+crosshairV.Position = UDim2.new(0.5, 0, 0.5, 0)
+crosshairV.AnchorPoint = Vector2.new(0.5, 0.5)
+crosshairV.BackgroundColor3 = Color3.new(1 - currentColor.R, 1 - currentColor.G, 1 - currentColor.B)
+crosshairV.BackgroundTransparency = 0
+crosshairV.Parent = screenGui
+crosshairV.Visible = false
+
+local function updateCrosshair()
+	local invertedColor = Color3.new(1 - currentColor.R, 1 - currentColor.G, 1 - currentColor.B)
+	crosshairH.BackgroundColor3 = invertedColor
+	crosshairV.BackgroundColor3 = invertedColor
+	crosshairH.Visible = mode ~= "none" and crosshairEnabled
+	crosshairV.Visible = mode ~= "none" and crosshairEnabled
+end
+
+local function showNotification(text)
+	local notif = Instance.new("TextLabel")
+	notif.Parent = screenGui
+	notif.Size = UDim2.new(0, 400, 0, 50)
+	notif.Position = UDim2.new(0.5, -200, 0.5, -25)
+	notif.Text = text
+	notif.BackgroundTransparency = 1
+	notif.TextColor3 = Color3.new(1, 1, 1)
+	notif.Font = Enum.Font.SourceSansBold
+	notif.TextSize = 24
+	notif.TextTransparency = 0
+	local tween = TweenService:Create(notif, TweenInfo.new(2), {TextTransparency = 1})
+	tween:Play()
+	task.delay(2, function()
+		notif:Destroy()
+	end)
+end
+
+-- Extend colors to 25
+local colors = {}
+for i = 0, 24 do
+    colors[i+1] = Color3.fromHSV(i/25, 1, 1)
+end
+
+local buttons = {}
+local selectedIndex = 1
+
+-- Main container (redesigned again)
+local rect = Instance.new("Frame")
+rect.Size = UDim2.fromOffset(620, 420)
+rect.Position = UDim2.fromScale(0.5, 0.55)
+rect.AnchorPoint = Vector2.new(0.5, 0.5)
+rect.BackgroundColor3 = theme.panel
+rect.BorderSizePixel = 0
+rect.Visible = false
+rect.Parent = screenGui
+Instance.new("UICorner", rect).CornerRadius = UDim.new(0, 20)
+
+local rectStroke = Instance.new("UIStroke")
+rectStroke.Color = theme.accentDim
+rectStroke.Thickness = 1
+rectStroke.Parent = rect
+
+local rectGradient = Instance.new("UIGradient")
+rectGradient.Color = ColorSequence.new({
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(10, 10, 16)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(24, 24, 34))
+})
+rectGradient.Rotation = 25
+rectGradient.Parent = rect
+
+local header = Instance.new("Frame")
+header.Size = UDim2.new(1, 0, 0, 56)
+header.BackgroundColor3 = theme.bg
+header.BackgroundTransparency = 0.05
+header.BorderSizePixel = 0
+header.Parent = rect
+Instance.new("UICorner", header).CornerRadius = UDim.new(0, 20)
+
+local headerAccent = Instance.new("Frame")
+headerAccent.Size = UDim2.new(1, 0, 0, 2)
+headerAccent.Position = UDim2.fromOffset(0, 54)
+headerAccent.BackgroundColor3 = theme.accent
+headerAccent.BorderSizePixel = 0
+headerAccent.Parent = header
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, -160, 1, 0)
+title.Position = UDim2.fromOffset(18, 0)
+title.BackgroundTransparency = 1
+title.Text = "WHOSSCRPT CONTROL"
+title.TextColor3 = theme.text
+title.Font = Enum.Font.GothamBlack
+title.TextSize = 20
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.Parent = header
+
+local subTitle = Instance.new("TextLabel")
+subTitle.Size = UDim2.new(1, -160, 0, 18)
+subTitle.Position = UDim2.fromOffset(18, 32)
+subTitle.BackgroundTransparency = 1
+subTitle.Text = "ESP visual tuning"
+subTitle.TextColor3 = theme.muted
+subTitle.Font = Enum.Font.Gotham
+subTitle.TextSize = 12
+subTitle.TextXAlignment = Enum.TextXAlignment.Left
+subTitle.Parent = header
+
+local closeBtn = Instance.new("TextButton")
+closeBtn.Size = UDim2.fromOffset(32, 32)
+closeBtn.Position = UDim2.new(1, -44, 0, 12)
+closeBtn.AnchorPoint = Vector2.new(0, 0)
+closeBtn.Text = "X"
+closeBtn.Font = Enum.Font.GothamBold
+closeBtn.TextSize = 14
+closeBtn.TextColor3 = theme.accentHot
+closeBtn.BackgroundColor3 = Color3.fromRGB(20, 20, 24)
+closeBtn.BackgroundTransparency = 0.1
+closeBtn.Parent = header
+Instance.new("UICorner", closeBtn).CornerRadius = UDim.new(0, 10)
+
+closeBtn.MouseButton1Click:Connect(function()
+	screenGui:Destroy()
+end)
+
+local body = Instance.new("Frame")
+body.Size = UDim2.new(1, -24, 1, -76)
+body.Position = UDim2.fromOffset(12, 64)
+body.BackgroundTransparency = 1
+body.BorderSizePixel = 0
+body.Parent = rect
+
+local infoPanel = Instance.new("Frame")
+infoPanel.Size = UDim2.new(0, 190, 1, 0)
+infoPanel.BackgroundColor3 = theme.sidebar
+infoPanel.BorderSizePixel = 0
+infoPanel.Parent = body
+Instance.new("UICorner", infoPanel).CornerRadius = UDim.new(0, 16)
+
+local infoStroke = Instance.new("UIStroke")
+infoStroke.Color = theme.accentDim
+infoStroke.Thickness = 1
+infoStroke.Parent = infoPanel
+
+local brand = Instance.new("TextLabel")
+brand.Size = UDim2.new(1, -20, 0, 36)
+brand.Position = UDim2.fromOffset(10, 10)
+brand.BackgroundTransparency = 1
+brand.Text = "WHOSSCRPT"
+brand.TextColor3 = theme.text
+brand.Font = Enum.Font.Code
+brand.TextSize = 16
+brand.TextXAlignment = Enum.TextXAlignment.Left
+brand.Parent = infoPanel
+
+local statusDivider = Instance.new("Frame")
+statusDivider.Size = UDim2.new(1, -20, 0, 1)
+statusDivider.Position = UDim2.fromOffset(10, 50)
+statusDivider.BackgroundColor3 = theme.accentDim
+statusDivider.BorderSizePixel = 0
+statusDivider.Parent = infoPanel
+
+local modeLabel = Instance.new("TextLabel")
+modeLabel.Size = UDim2.new(1, -20, 0, 24)
+modeLabel.Position = UDim2.fromOffset(10, 64)
+modeLabel.BackgroundTransparency = 1
+modeLabel.TextColor3 = theme.accent
+modeLabel.Font = Enum.Font.GothamBold
+modeLabel.TextSize = 14
+modeLabel.TextXAlignment = Enum.TextXAlignment.Left
+modeLabel.Parent = infoPanel
+
+local transLabel = Instance.new("TextLabel")
+transLabel.Size = UDim2.new(1, -20, 0, 22)
+transLabel.Position = UDim2.fromOffset(10, 90)
+transLabel.BackgroundTransparency = 1
+transLabel.TextColor3 = theme.muted
+transLabel.Font = Enum.Font.Gotham
+transLabel.TextSize = 13
+transLabel.TextXAlignment = Enum.TextXAlignment.Left
+transLabel.Parent = infoPanel
+
+local featureTitle = Instance.new("TextLabel")
+featureTitle.Size = UDim2.new(1, -20, 0, 18)
+featureTitle.Position = UDim2.fromOffset(10, 126)
+featureTitle.BackgroundTransparency = 1
+featureTitle.TextColor3 = theme.text
+featureTitle.Font = Enum.Font.GothamBold
+featureTitle.TextSize = 12
+featureTitle.TextXAlignment = Enum.TextXAlignment.Left
+featureTitle.Text = "OPACITY"
+featureTitle.Parent = infoPanel
+
+local featureList = Instance.new("Frame")
+featureList.Size = UDim2.new(1, -20, 0, 160)
+featureList.Position = UDim2.fromOffset(10, 150)
+featureList.BackgroundTransparency = 1
+featureList.BorderSizePixel = 0
+featureList.Parent = infoPanel
+
+local featureLayout = Instance.new("UIListLayout")
+featureLayout.Padding = UDim.new(0, 4)
+featureLayout.FillDirection = Enum.FillDirection.Vertical
+featureLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
+featureLayout.SortOrder = Enum.SortOrder.LayoutOrder
+featureLayout.Parent = featureList
+
+local function createFeatureRow(text)
+	local row = Instance.new("Frame")
+	row.Size = UDim2.new(1, 0, 0, 22)
+	row.BackgroundColor3 = Color3.fromRGB(14, 14, 18)
+	row.BackgroundTransparency = 0.7
+	row.BorderSizePixel = 0
+	row.Parent = featureList
+	Instance.new("UICorner", row).CornerRadius = UDim.new(0, 6)
+
+	local nameLabel = Instance.new("TextLabel")
+	nameLabel.Size = UDim2.new(0.7, -6, 1, 0)
+	nameLabel.Position = UDim2.fromOffset(6, 0)
+	nameLabel.BackgroundTransparency = 1
+	nameLabel.TextColor3 = theme.muted
+	nameLabel.Font = Enum.Font.Code
+	nameLabel.TextSize = 11
+	nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+	nameLabel.Text = text
+	nameLabel.Parent = row
+
+	local statusLabel = Instance.new("TextLabel")
+	statusLabel.Size = UDim2.new(0.3, -6, 1, 0)
+	statusLabel.Position = UDim2.new(0.7, 0, 0, 0)
+	statusLabel.BackgroundTransparency = 1
+	statusLabel.TextColor3 = theme.accent
+	statusLabel.Font = Enum.Font.GothamBold
+	statusLabel.TextSize = 11
+	statusLabel.TextXAlignment = Enum.TextXAlignment.Right
+	statusLabel.Text = "OFF"
+	statusLabel.Parent = row
+
+	local stroke = Instance.new("UIStroke")
+	stroke.Color = theme.accent
+	stroke.Thickness = 0
+	stroke.Parent = row
+
+	featureItems[#featureItems + 1] = {
+		row = row,
+		status = statusLabel
+	}
+end
+
+createFeatureRow("[NUM1] OUTLINE ESP")
+createFeatureRow("[NUM2/HOME] OPEN PANEL")
+createFeatureRow("[NUM3] FILL COLOR")
+createFeatureRow("[NUM4] FILL ESP")
+createFeatureRow("[NUM5] NVG OVERLAY")
+createFeatureRow("[NUM6] CROSSHAIR")
+
+local hintLabel = Instance.new("TextLabel")
+hintLabel.Size = UDim2.new(1, -20, 0, 26)
+hintLabel.Position = UDim2.fromOffset(10, 314)
+hintLabel.BackgroundTransparency = 1
+hintLabel.TextColor3 = theme.muted
+hintLabel.Font = Enum.Font.Code
+hintLabel.TextSize = 11
+hintLabel.TextXAlignment = Enum.TextXAlignment.Left
+hintLabel.TextYAlignment = Enum.TextYAlignment.Top
+hintLabel.TextWrapped = true
+hintLabel.Text = "USE ARROW AND ENTER TO\nENABLE / DISABLE FEATURES"
+hintLabel.Parent = infoPanel
+
+local palettePanel = Instance.new("Frame")
+palettePanel.Size = UDim2.new(1, -206, 1, 0)
+palettePanel.Position = UDim2.fromOffset(206, 0)
+palettePanel.BackgroundColor3 = theme.card
+palettePanel.BorderSizePixel = 0
+palettePanel.Parent = body
+Instance.new("UICorner", palettePanel).CornerRadius = UDim.new(0, 16)
+
+local paletteStroke = Instance.new("UIStroke")
+paletteStroke.Color = theme.accentDim
+paletteStroke.Thickness = 1
+paletteStroke.Parent = palettePanel
+
+local paletteTitle = Instance.new("TextLabel")
+paletteTitle.Size = UDim2.new(1, -20, 0, 28)
+paletteTitle.Position = UDim2.fromOffset(12, 8)
+paletteTitle.BackgroundTransparency = 1
+paletteTitle.Text = "PALETTE"
+paletteTitle.TextColor3 = theme.text
+paletteTitle.Font = Enum.Font.GothamBold
+paletteTitle.TextSize = 14
+paletteTitle.TextXAlignment = Enum.TextXAlignment.Left
+paletteTitle.Parent = palettePanel
+
+local paletteDivider = Instance.new("Frame")
+paletteDivider.Size = UDim2.new(1, -24, 0, 1)
+paletteDivider.Position = UDim2.fromOffset(12, 34)
+paletteDivider.BackgroundColor3 = theme.accentDim
+paletteDivider.BorderSizePixel = 0
+paletteDivider.Parent = palettePanel
+
+local card = Instance.new("Frame")
+card.Size = UDim2.new(1, -24, 1, -92)
+card.Position = UDim2.fromOffset(12, 48)
+card.BackgroundTransparency = 1
+card.BorderSizePixel = 0
+card.Parent = palettePanel
+
+local cardLayout = Instance.new("UIListLayout")
+cardLayout.Padding = UDim.new(0, 10)
+cardLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+cardLayout.Parent = card
+
+local buttonIndex = 1
+local function setSelectedIndex(newIndex)
+	if buttons[selectedIndex] and buttons[selectedIndex]:FindFirstChild("UIStroke") then
+		buttons[selectedIndex].UIStroke.Thickness = 0
+	end
+	selectedIndex = newIndex
+	if buttons[selectedIndex] and buttons[selectedIndex]:FindFirstChild("UIStroke") then
+		buttons[selectedIndex].UIStroke.Thickness = 2
+	end
+end
+
+-- Button creator
+local function createButton(parent)
+	local index = buttonIndex
+	local btn = Instance.new("TextButton")
+	btn.Size = UDim2.fromOffset(52, 40)
+	btn.BackgroundColor3 = colors[index]
+	btn.BorderColor3 = Color3.fromRGB(243, 243, 243)
+	btn.Text = tostring(index)
+	btn.TextColor3 = Color3.new(1 - colors[index].R, 1 - colors[index].G, 1 - colors[index].B)
+	btn.Font = Enum.Font.Gotham
+	btn.TextSize = 14
+	btn.Parent = parent
+	Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 8)
+	local stroke = Instance.new("UIStroke")
+	stroke.Parent = btn
+	stroke.Color = Color3.new(1, 1, 1)
+	stroke.Thickness = 0
+	btn.MouseButton1Click:Connect(function()
+		currentColor = colors[index]
+		showNotification("Color changed to " .. index)
+		rect.Visible = false
+		updateHighlights()
+		updateCrosshair()
+	end)
+	buttons[index] = btn
+	buttonIndex = index + 1
+	return btn
+end
+
+-- Row creator (centered)
+local function createRow()
+	local row = Instance.new("Frame")
+	row.Size = UDim2.new(1, 0, 0, 40)
+	row.BackgroundTransparency = 1
+	row.Parent = card
+
+	local layout = Instance.new("UIListLayout")
+	layout.FillDirection = Enum.FillDirection.Horizontal
+	layout.Padding = UDim.new(0, 8)
+	layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	layout.VerticalAlignment = Enum.VerticalAlignment.Center
+	layout.Parent = row
+
+	for _ = 1, 5 do
+		createButton(row)
+	end
+end
+
+-- Rows
+createRow()
+for _ = 1, 4 do
+	createRow()
+end
+
+local subtitle = Instance.new("TextLabel")
+subtitle.Size = UDim2.new(1, -20, 0, 20)
+subtitle.Position = UDim2.new(0, 10, 1, -30)
+subtitle.BackgroundTransparency = 1
+subtitle.Text = "Use Arrow + Enter"
+subtitle.TextColor3 = theme.muted
+subtitle.Font = Enum.Font.Code
+subtitle.TextSize = 14
+subtitle.TextXAlignment = Enum.TextXAlignment.Center
+subtitle.Parent = palettePanel
+
+local function setFeatureIndex(newIndex)
+	if featureItems[featureIndex] and featureItems[featureIndex].row:FindFirstChild("UIStroke") then
+		featureItems[featureIndex].row.UIStroke.Thickness = 0
+	end
+	featureIndex = newIndex
+	if featureItems[featureIndex] and featureItems[featureIndex].row:FindFirstChild("UIStroke") then
+		featureItems[featureIndex].row.UIStroke.Thickness = 2
+	end
+end
+
+local function updateFocusStyles()
+	if panelFocus == "side" then
+		infoStroke.Thickness = 2
+		paletteStroke.Thickness = 1
+	else
+		infoStroke.Thickness = 1
+		paletteStroke.Thickness = 2
+	end
+end
+
+local function updateFeatureStatus()
+	if featureItems[1] then
+		featureItems[1].status.Text = (mode == "outline") and "ON" or "OFF"
+	end
+	if featureItems[2] then
+		featureItems[2].status.Text = rect.Visible and "ON" or "OFF"
+	end
+	if featureItems[3] then
+		featureItems[3].status.Text = (mode == "fill") and "ON" or "OFF"
+	end
+	if featureItems[4] then
+		featureItems[4].status.Text = (mode == "wall") and "ON" or "OFF"
+	end
+	if featureItems[5] then
+		featureItems[5].status.Text = (not disabled) and "ON" or "OFF"
+	end
+	if featureItems[6] then
+		featureItems[6].status.Text = crosshairEnabled and "ON" or "OFF"
+	end
+end
+
+local function updateStatusText()
+	modeLabel.Text = "MODE: " .. string.upper(mode)
+	transLabel.Text = "FILL: " .. tostring(math.floor((1 - fillTransparency) * 100)) .. "% [+/-]"
+	updateFeatureStatus()
+end
+
+updateStatusText()
+setFeatureIndex(1)
+updateFocusStyles()
+
+local highlightedObjects = {}  -- Cache for objects to highlight
+local maxHighlights = 200  -- Limit to prevent performance issues
+local highlightCount = 0
+
+local function applyHighlightStyle(highlight)
+	if mode == "fill" then
+		highlight.OutlineTransparency = 1
+		highlight.FillTransparency = fillTransparency
+		highlight.FillColor = currentColor
+		highlight.DepthMode = Enum.HighlightDepthMode.Occluded
+	elseif mode == "wall" then
+		highlight.OutlineTransparency = 1
+		highlight.FillTransparency = fillTransparency
+		highlight.FillColor = currentColor
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	elseif mode == "outline" then
+		highlight.OutlineTransparency = 0.8
+		highlight.FillTransparency = 1
+		highlight.OutlineColor = currentColor
+	end
+end
+
+local function isValidObject(obj)
+	return obj.Name == "Male" and obj:FindFirstChild("Humanoid")
+end
+
+local function addHighlight(obj)
+	if highlightCount < maxHighlights and not highlightedObjects[obj] and isValidObject(obj) then
+		highlightedObjects[obj] = true
+		highlightCount = highlightCount + 1
+		if mode ~= "none" then
+			local newHighlight = Instance.new("Highlight")
+			newHighlight.Parent = obj
+			newHighlight.Adornee = obj
+			newHighlight.Enabled = true
+			applyHighlightStyle(newHighlight)
+		end
+	end
+end
+
+local function removeHighlight(obj)
+	if highlightedObjects[obj] then
+		highlightedObjects[obj] = nil
+		highlightCount = highlightCount - 1
+		local highlight = obj:FindFirstChild("Highlight")
+		if highlight then
+			highlight:Destroy()
+		end
+	end
+end
+
+local function updateHighlights()
+	for obj in pairs(highlightedObjects) do
+		local highlight = obj:FindFirstChild("Highlight")
+		if mode ~= "none" then
+			if not highlight then
+				local newHighlight = Instance.new("Highlight")
+				newHighlight.Parent = obj
+				newHighlight.Adornee = obj
+				newHighlight.Enabled = true
+				applyHighlightStyle(newHighlight)
+			else
+				applyHighlightStyle(highlight)
+			end
+		else
+			if highlight then
+				highlight:Destroy()
+			end
+		end
+	end
+end
+
+-- Initial scan
+task.spawn(function()
+	for _, desc in Workspace:GetDescendants() do
+		addHighlight(desc)
+	end
+end)
+
+-- Handle new descendants
+Workspace.DescendantAdded:Connect(function(desc)
+	addHighlight(desc)
+end)
+
+-- Handle removed descendants (optional, but for cleanup)
+Workspace.DescendantRemoving:Connect(function(desc)
+	removeHighlight(desc)
+end)
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.KeypadOne and not gameProcessed then
+		if mode == "outline" then
+			mode = "none"
+			showNotification("Outline Highlight Disabled")
+		else
+			mode = "outline"
+			showNotification("Outline Highlight Enabled")
+		end
+		updateHighlights()
+		updateCrosshair()
+		updateStatusText()
+	elseif (input.KeyCode == Enum.KeyCode.KeypadTwo or input.KeyCode == Enum.KeyCode.Home) and not gameProcessed then
+		rect.Visible = not rect.Visible
+		panelFocus = "side"
+		setSelectedIndex(1)
+		setFeatureIndex(1)
+		updateFocusStyles()
+		updateFeatureStatus()
+	elseif (input.KeyCode == Enum.KeyCode.KeypadThree) and not gameProcessed then
+		if mode == "fill" then
+			mode = "none"
+			showNotification("Fill Highlight Disabled")
+		else
+			mode = "fill"
+			showNotification("Fill Highlight Enabled")
+		end
+		updateHighlights()
+		updateCrosshair()
+		updateStatusText()
+	elseif (input.KeyCode == Enum.KeyCode.KeypadFour) and not gameProcessed then
+		if mode == "wall" then
+			mode = "none"
+			showNotification("Wall Highlight Disabled")
+		else
+			mode = "wall"
+			showNotification("Wall Highlight Enabled")
+		end
+		updateHighlights()
+		updateCrosshair()
+		updateStatusText()
+	elseif input.KeyCode == Enum.KeyCode.Equals and not gameProcessed then
+		fillTransparency = math.max(fillTransparency - 0.1, 0)
+		showNotification("Fill Transparency: " .. tostring(math.floor((1 - fillTransparency) * 100)) .. "%")
+		updateHighlights()
+		updateStatusText()
+	elseif input.KeyCode == Enum.KeyCode.Minus and not gameProcessed then
+		fillTransparency = math.min(fillTransparency + 0.1, 1)
+		showNotification("Fill Transparency: " .. tostring(math.floor((1 - fillTransparency) * 100)) .. "%")
+		updateHighlights()
+		updateStatusText()
+	elseif input.KeyCode == Enum.KeyCode.KeypadSix and not gameProcessed then
+		if mode == "none" then
+			showNotification("Enable ESP first")
+		else
+			crosshairEnabled = not crosshairEnabled
+			showNotification("Crosshair: " .. (crosshairEnabled and "ON" or "OFF"))
+			updateCrosshair()
+			updateFeatureStatus()
+		end
+	elseif rect.Visible and not gameProcessed then
+		if input.KeyCode == Enum.KeyCode.Right and panelFocus == "side" then
+			panelFocus = "palette"
+			updateFocusStyles()
+			return
+		elseif input.KeyCode == Enum.KeyCode.Left and panelFocus == "palette" then
+			panelFocus = "side"
+			updateFocusStyles()
+			return
+		end
+
+		if panelFocus == "side" then
+			local nextFeature = featureIndex
+			if input.KeyCode == Enum.KeyCode.Up then
+				nextFeature = math.max(1, featureIndex - 1)
+			elseif input.KeyCode == Enum.KeyCode.Down then
+				nextFeature = math.min(#featureItems, featureIndex + 1)
+			elseif input.KeyCode == Enum.KeyCode.Return then
+				if featureIndex == 1 then
+					if mode == "outline" then
+						mode = "none"
+						showNotification("Outline Highlight Disabled")
+					else
+						mode = "outline"
+						showNotification("Outline Highlight Enabled")
+					end
+					updateHighlights()
+					updateCrosshair()
+					updateStatusText()
+				elseif featureIndex == 2 then
+					rect.Visible = not rect.Visible
+					updateFeatureStatus()
+				elseif featureIndex == 3 then
+					if mode == "fill" then
+						mode = "none"
+						showNotification("Fill Highlight Disabled")
+					else
+						mode = "fill"
+						showNotification("Fill Highlight Enabled")
+					end
+					updateHighlights()
+					updateCrosshair()
+					updateStatusText()
+				elseif featureIndex == 4 then
+					if mode == "wall" then
+						mode = "none"
+						showNotification("Wall Highlight Disabled")
+					else
+						mode = "wall"
+						showNotification("Wall Highlight Enabled")
+					end
+					updateHighlights()
+					updateCrosshair()
+					updateStatusText()
+				elseif featureIndex == 5 then
+					if toggleNvg then
+						toggleNvg()
+					end
+					updateFeatureStatus()
+				elseif featureIndex == 6 then
+					if mode == "none" then
+						showNotification("Enable ESP first")
+					else
+						crosshairEnabled = not crosshairEnabled
+						showNotification("Crosshair: " .. (crosshairEnabled and "ON" or "OFF"))
+						updateCrosshair()
+						updateFeatureStatus()
+					end
+				end
+			end
+			setFeatureIndex(nextFeature)
+		else
+			local column = ((selectedIndex - 1) % 5) + 1
+			local nextIndex = selectedIndex
+			if input.KeyCode == Enum.KeyCode.Up then
+				if selectedIndex > 5 then
+					nextIndex = selectedIndex - 5
+				end
+			elseif input.KeyCode == Enum.KeyCode.Down then
+				if selectedIndex <= 20 then
+					nextIndex = selectedIndex + 5
+				end
+			elseif input.KeyCode == Enum.KeyCode.Left then
+				if column > 1 then
+					nextIndex = selectedIndex - 1
+				end
+			elseif input.KeyCode == Enum.KeyCode.Right then
+				if column < 5 then
+					nextIndex = selectedIndex + 1
+				end
+			elseif input.KeyCode == Enum.KeyCode.Return then
+				currentColor = colors[selectedIndex]
+				showNotification("Color changed to " .. selectedIndex)
+				rect.Visible = false
+				updateHighlights()
+				updateCrosshair()
+				updateStatusText()
+			end
+			setSelectedIndex(nextIndex)
+		end
+	end
+end)
+
+-- UI Setup
+local existingNVG = playerGui:FindFirstChild("NVGDisableUI")
+if existingNVG then
+	existingNVG:Destroy()
+end
+
+local nvgGui = Instance.new("ScreenGui")
+nvgGui.Name = "NVGDisableUI"
+nvgGui.IgnoreGuiInset = true
+nvgGui.ResetOnSpawn = false
+nvgGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+nvgGui.DisplayOrder = 30
+nvgGui.Parent = playerGui
+
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0, 200, 0, 50)
+textLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+textLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+textLabel.BackgroundTransparency = 1
+textLabel.TextColor3 = theme.text
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.TextTransparency = 1
+textLabel.Parent = nvgGui
+
+
+local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+local fadeIn = TweenService:Create(textLabel, tweenInfo, {TextTransparency = 0})
+local fadeOut = TweenService:Create(textLabel, tweenInfo, {TextTransparency = 1})
+
+local function showMessage(message)
+    textLabel.Text = message
+    fadeIn:Play()
+    task.spawn(function()
+        task.wait(2)
+        fadeOut:Play()
+    end)
+end
+
+local nvgInterface = player.PlayerGui:FindFirstChild("NVGInterface")
+
+local function getColorCorrection()
+	local effect = Lighting:FindFirstChild("ColorCorrection")
+	if effect and effect:IsA("ColorCorrectionEffect") then
+		return effect
+	end
+	local firstEffect = Lighting:FindFirstChildWhichIsA("ColorCorrectionEffect")
+	return firstEffect
+end
+
+toggleNvg = function()
+    disabled = not disabled
+    if nvgInterface then
+        nvgInterface.Enabled = not disabled
+    end
+	local colorCorrection = getColorCorrection()
+	if colorCorrection then
+		colorCorrection.Enabled = not disabled
+	else
+		showMessage("ColorCorrection not found")
+	end
+    showMessage("NVG and ColorCorrection: " .. (disabled and "OFF" or "ON"))
+end
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.KeypadFive then
+		toggleNvg()
+		updateFeatureStatus()
+    end
+end)
