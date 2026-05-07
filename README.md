@@ -9,59 +9,56 @@
                                                       ██       
                                                       ▀        
 ```
+# Features
 
-## ✨ Features
+1. Outline ESP
 
-### Outline ESP
+Shows character outlines only (clean edge highlight).
 
-Displays an outline around characters to improve visibility without
-applying any fill color.
+2. Fill Color (Occluded Fill)
 
-### Highlight Character
+Applies solid color fill with depth occlusion behavior.
 
-Applies a color fill highlight to characters as a standard visual
-marker, without being seen through walls.
+3. Fill ESP (Wall / Always On Top)
 
-### Fill Color ESP
+Applies fill that remains visible through objects/walls.
 
-Applies a solid color fill to characters that remains visible even when
-they are seen through walls or objects.
+4. Color Palette
 
-### Dynamic Crosshair
+Select highlight color from a 25-color grid.
 
-Automatically shows a center crosshair when visual features are active,
-with a color that adapts (inverted) to the selected color.
+5. Fill Opacity Control
 
-### Color Picker UI
+Increase/decrease fill opacity.
 
-A color selection menu with 25 color options, selectable using keyboard
-or mouse, applied to all visual highlights.
+6. NVG Overlay Toggle
 
-### Opacity Control
+Turns NVG interface and color-correction overlay ON/OFF.
 
-Adjusts the intensity of the highlight fill on characters in real time
-to keep visuals comfortable.
+7. Independent Crosshair
 
-### Remove Night Vision Goggles Overlay
+Crosshair can be toggled separately, but requires ESP mode to be active.
 
-Removes the Night Vision Goggles overlay and related visual effects for
-a cleaner screen view.
 
-------------------------------------------------------------------------
+Keybinds
+Numpad 1: Toggle Outline ESP ON/OFF
 
-## 🎮 Keybinds
+Numpad 2 or Home: Open/Close Control Panel
 
-NUMPAD 1 / DELETE → Toggle Outline ESP\
-NUMPAD 2 / HOME → Open / Close Color Picker\
-NUMPAD 3 → Highlight Character\
-NUMPAD 4 → Fill Color ESP\
-NUMPAD 5 → Remove Night Vision Goggles Overlay
+Numpad 3: Toggle Fill Color mode ON/OFF
 
-= → Increase Opacity\
-- → Decrease Opacity
+Numpad 4: Toggle Fill ESP (Wall mode) ON/OFF
 
-Arrow Keys → Navigate Color Menu\
-ENTER → Select Color
+Numpad 5: Toggle NVG Overlay ON/OFF
+
+Numpad 6: Toggle Crosshair ON/OFF (ESP must be enabled)
+
+= : Increase Fill Visibility (lower transparency)
+
+- : Panel Navigation (Arrow + Enter)
+
+You can activate the features using Panel
+[HOME] to open Panel.
 
 ------------------------------------------------------------------------
 
@@ -73,4 +70,5 @@ ENTER → Select Color
 
 ------------------------------------------------------------------------
 
-# Thanks For using, Donate at: https://linktr.ee/whosthees
+# Thanks For using, Donate at: https://itsmylink.rweb.site/Whosthees
+
